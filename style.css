@@ -1,6 +1,21 @@
 * { box-sizing: border-box; }
-body { margin: 0; font-family: Arial, sans-serif; color: #111; background: #fff; }
-
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #111;
+  background-color: #fff7fb;
+  background-image: url("images/logo.png");
+  background-repeat: no-repeat;
+  background-position: center 120px;
+  background-size: 420px;
+}
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(255, 247, 251, 0.92);
+  z-index: -1;
+}
 .nav {
   position: sticky; top: 0; z-index: 10;
   display: flex; justify-content: space-between; align-items: center;
@@ -69,3 +84,4 @@ textarea { min-height: 110px; resize: vertical; }
 .contact { background: #fff7fb; border-radius: 18px; }
 
 .footer { padding: 24px; text-align: center; color: #666; border-top: 1px solid #eee; }
+
