@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bouquets & Baskets</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="nav">
+    <div class="brand">Bouquets & Baskets</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#shop">Shop</a>
+      <a href="#custom">Custom Orders</a>
+      <a href="#about">About</a>
+      <a href="#contact" class="btn">DM to Order</a>
+    </nav>
+  </header>
+
+  <main id="home" class="hero">
+    <h1>Luxury • Romantic • Floral Gifts</h1>
+    <p>Handcrafted bouquets & baskets for every moment.</p>
+    <div class="actions">
+      <a class="btn big" href="#shop">View Collection</a>
+      <a class="btn big outline" href="#contact">DM to Order</a>
+    </div>
+  </main>
+
+  <section id="shop" class="section">
+    <h2>Best Sellers</h2>
+    <div class="grid">
+      <article class="card">
+        <div class="img"></div>
+        <h3>Rose Bouquet</h3>
+        <p>Starting from $—</p>
+      </article>
+      <article class="card">
+        <div class="img"></div>
+        <h3>Chocolate Basket</h3>
+        <p>Starting from $—</p>
+      </article>
+      <article class="card">
+        <div class="img"></div>
+        <h3>Luxury Gift Box</h3>
+        <p>Starting from $—</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="custom" class="section">
+    <h2>Custom Orders</h2>
+    <p>Tell us your budget, theme, and date — we’ll design it for you.</p>
+
+    <form class="form" id="orderForm">
+      <input name="name" placeholder="Your name" required />
+      <input name="budget" placeholder="Budget (e.g., $50)" required />
+      <input name="date" type="date" required />
+      <textarea name="details" placeholder="Colors, flowers, message card, delivery/pickup..." required></textarea>
+      <button class="btn" type="submit">Generate DM Message</button>
+      <p class="note" id="result"></p>
+    </form>
+  </section>
+
+  <section id="about" class="section">
+    <h2>About</h2>
+    <p>
+      Bouquets & Baskets creates luxury, romantic floral gifts with premium finishing.
+      Every order is handcrafted with love and detail.
+    </p>
+  </section>
+
+  <section id="contact" class="section contact">
+    <h2>Contact</h2>
+    <p><strong>Website:</strong> bouquets_and_baskets.ca</p>
+    <p><strong>Phone:</strong> 250-589-4908</p>
+    <p><strong>Instagram:</strong> @bouquets_and_baskets</p>
+    <a class="btn big" href="#" id="dmLink">DM to Order</a>
+  </section>
+
+  <footer class="footer">
+    © <span id="year"></span> Bouquets & Baskets • All rights reserved
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
