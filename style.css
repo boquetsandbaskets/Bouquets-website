@@ -107,9 +107,10 @@ textarea { min-height: 110px; resize: vertical; }
 }
 
 .logo {
-  height: 20px;
+  height: 30px;
   object-fit: contain;
 }
+
 
 
 
