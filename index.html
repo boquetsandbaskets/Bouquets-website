@@ -1,94 +1,203 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Bouquets & Baskets</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
 <body>
-<header class="nav">
-  <div class="logo-wrap">
-    <img src="images/logo.png" alt="Bouquets & Baskets Logo" class="logo">
-  </div>
-  <nav>
-    <a href="#home">Home</a>
-    <a href="#shop">Shop</a>
-    <a href="#custom">Custom Orders</a>
-    <a href="#about">About</a>
-    <a href="#contact" class="btn">DM to Order</a>
-  </nav>
-</header>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="header-inner">
+      <a class="logo-link" href="#home">
+        <img src="images/logo.png" class="logo" alt="Bouquets & Baskets" />
+      </a>
 
+      <nav class="nav">
+        <a href="#shop">Shop</a>
+        <a href="#about">About</a>
+        <a href="#how">How it works</a>
+        <a href="#faq">FAQ</a>
+        <a href="#contact" class="btn">DM to Order</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO (like Zeecraftastic: headline + short line + CTA + hero images) -->
   <main id="home" class="hero">
-    <h1>Luxury • Romantic • Floral Gifts</h1>
-    <p>Handcrafted bouquets & baskets for every moment.</p>
-    <div class="actions">
-      <a class="btn big" href="#shop">View Collection</a>
-      <a class="btn big outline" href="#contact">DM to Order</a>
+    <div class="hero-inner">
+      <div class="hero-text">
+        <h1>Luxury gifting, thoughtfully curated</h1>
+        <p>Handcrafted bouquets, cakes & gift boxes — designed with love.</p>
+        <div class="hero-actions">
+          <a class="btn big" href="#shop">Shop Collection</a>
+          <a class="btn big outline" href="#contact">DM to Order</a>
+        </div>
+        <p class="trust">★ Premium finishing · Custom themes · Made to order</p>
+      </div>
+
+      <div class="hero-media">
+        <img src="images/IMG_20240922_224240.jpg" alt="Chocolate Bouquet" />
+        <img src="images/IMG-20240923-WA0030.jpg" alt="Luxury Set" />
+      </div>
     </div>
   </main>
 
-  <section id="shop" class="section">
-    <h2>Best Sellers</h2>
-   <div class="grid">
-
-  <article class="card">
-    <img src="images/1000186985-01.jpeg" alt="Chocolate Bouquet">
-    <h3>Chocolate Bouquet</h3>
-    <p>Starting from $45</p>
-  </article>
-
-  <article class="card">
-    <img src="images/IMG-20240923-WA0030.jpg" alt="Luxury Balloon Gift">
-    <h3>Luxury Balloon Gift</h3>
-    <p>Starting from $65</p>
-  </article>
-
-  <article class="card">
-    <img src="images/IMG-20241005-WA0034.jpg" alt="Birthday Gift Box">
-    <h3>Birthday Gift Box</h3>
-    <p>Starting from $70</p>
-  </article>
-
-  <article class="card">
-    <img src="images/IMG-20241008-WA0170.jpg" alt="Premium HBD Set">
-    <h3>Premium HBD Set</h3>
-    <p>Starting from $85</p>
-  </article>
-
-</div>
+  <!-- STATS MARQUEE (scrolling strip like their “12 years / 100k orders” line) -->
+  <section class="marquee" aria-label="brand highlights">
+    <div class="marquee-track">
+      <span>Crafted with love</span>
+      <span>Handmade gifting</span>
+      <span>Custom themes</span>
+      <span>Premium packaging</span>
+      <span>Made to order</span>
+      <span>Crafted with love</span>
+      <span>Handmade gifting</span>
+      <span>Custom themes</span>
+      <span>Premium packaging</span>
+      <span>Made to order</span>
+    </div>
   </section>
 
-  <section id="custom" class="section">
-    <h2>Custom Orders</h2>
-    <p>Tell us your budget, theme, and date — we’ll design it for you.</p>
+  <!-- CATEGORY TILES (like “Handpicked for Valentine’s Day” categories) -->
+  <section class="section" id="shop">
+    <div class="section-head">
+      <h2>Handpicked for you</h2>
+      <p>Choose a category to start.</p>
+    </div>
 
-    <form class="form" id="orderForm">
-      <input name="name" placeholder="Your name" required />
-      <input name="budget" placeholder="Budget (e.g., $50)" required />
-      <input name="date" type="date" required />
-      <textarea name="details" placeholder="Colors, flowers, message card, delivery/pickup..." required></textarea>
-      <button class="btn" type="submit">Generate DM Message</button>
-      <p class="note" id="result"></p>
-    </form>
+    <div class="cats">
+      <a class="cat" href="#products"><span>Chocolate Bouquets</span></a>
+      <a class="cat" href="#products"><span>Balloon Boxes</span></a>
+      <a class="cat" href="#products"><span>Cake + Flowers</span></a>
+    </div>
   </section>
 
-  <section id="about" class="section">
-    <h2>About</h2>
-    <p>
-      Bouquets & Baskets creates luxury, romantic floral gifts with premium finishing.
-      Every order is handcrafted with love and detail.
-    </p>
+  <!-- ABOUT (like “Our Craft. Our Journey.”) -->
+  <section class="section split" id="about">
+    <div>
+      <h2>Our Craft. Our Journey.</h2>
+      <p>
+        Bouquets & Baskets is built on thoughtful details — premium finishing, clean themes,
+        and gifts that feel personal. Every order is handcrafted and packed with care.
+      </p>
+      <a class="btn" href="#products">Shop Now</a>
+    </div>
+
+    <div class="card-soft">
+      <h3>Why customers love us</h3>
+      <ul class="bullets">
+        <li>Premium packaging & clean aesthetic</li>
+        <li>Custom themes & name personalization</li>
+        <li>Perfect for birthdays, anniversaries & surprises</li>
+      </ul>
+    </div>
   </section>
 
-  <section id="contact" class="section contact">
+  <!-- HOW IT WORKS (their 3 steps) -->
+  <section class="section" id="how">
+    <div class="section-head">
+      <h2>How it works</h2>
+      <p>Simple ordering — fast replies — made to order.</p>
+    </div>
+
+    <div class="steps">
+      <div class="step">
+        <div class="step-no">1</div>
+        <h3>Choose a gift</h3>
+        <p>Pick a design from our collection.</p>
+      </div>
+      <div class="step">
+        <div class="step-no">2</div>
+        <h3>Share details</h3>
+        <p>Budget, theme/colors, delivery date, message card.</p>
+      </div>
+      <div class="step">
+        <div class="step-no">3</div>
+        <h3>Confirm & we create</h3>
+        <p>We craft it with love and share updates.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS GRID (like their product list area) -->
+  <section class="section" id="products">
+    <div class="section-head">
+      <h2>Featured collection</h2>
+      <p>Popular picks customers order again & again.</p>
+    </div>
+
+    <div class="grid">
+      <article class="p-card">
+        <img src="images/IMG_20240922_224240.jpg" alt="Chocolate Bouquet" />
+        <div class="p-info">
+          <h3>Chocolate Bouquet</h3>
+          <p class="price">Starting from $45</p>
+          <button class="btn small" data-product="Chocolate Bouquet">DM to Order</button>
+        </div>
+      </article>
+
+      <article class="p-card">
+        <img src="images/IMG-20240923-WA0030.jpg" alt="Luxury Surprise Set" />
+        <div class="p-info">
+          <h3>Luxury Surprise Set</h3>
+          <p class="price">Starting from $85</p>
+          <button class="btn small" data-product="Luxury Surprise Set">DM to Order</button>
+        </div>
+      </article>
+
+      <article class="p-card">
+        <img src="images/IMG-20241005-WA0034.jpg" alt="Birthday Box" />
+        <div class="p-info">
+          <h3>Birthday Box</h3>
+          <p class="price">Starting from $70</p>
+          <button class="btn small" data-product="Birthday Box">DM to Order</button>
+        </div>
+      </article>
+
+      <article class="p-card">
+        <img src="images/IMG-20241008-WA0170.jpg" alt="HBD Gift Set" />
+        <div class="p-info">
+          <h3>HBD Gift Set</h3>
+          <p class="price">Starting from $90</p>
+          <button class="btn small" data-product="HBD Gift Set">DM to Order</button>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- FAQ (like their FAQ block) -->
+  <section class="section" id="faq">
+    <div class="section-head">
+      <h2>Frequently Asked Questions</h2>
+      <p>Quick answers to common questions.</p>
+    </div>
+
+    <div class="faq">
+      <details>
+        <summary>How do I place an order?</summary>
+        <p>DM us on Instagram with the product name + your budget/theme/date. We confirm and start crafting.</p>
+      </details>
+      <details>
+        <summary>How early should I order?</summary>
+        <p>For custom themes, we recommend 2–5 days in advance (earlier during peak seasons).</p>
+      </details>
+      <details>
+        <summary>Do you offer delivery?</summary>
+        <p>Yes — share your location and preferred time window, and we’ll confirm options.</p>
+      </details>
+    </div>
+  </section>
+
+  <!-- CONTACT / FOOTER (like their contact + socials) -->
+  <section class="section contact" id="contact">
     <h2>Contact</h2>
-    <p><strong>Website:</strong> bouquets_and_baskets.ca</p>
-    <p><strong>Phone:</strong> 250-589-4908</p>
     <p><strong>Instagram:</strong> @bouquets_and_baskets</p>
-    <a class="btn big" href="#" id="dmLink">DM to Order</a>
+    <p><strong>Phone:</strong> 250-589-4908</p>
+    <p><strong>Website:</strong> bouquets_and_baskets.ca</p>
+
+    <div class="contact-actions">
+      <a class="btn big" id="igLink" href="https://www.instagram.com/bouquets_and_baskets/" target="_blank" rel="noreferrer">DM on Instagram</a>
+    </div>
   </section>
+
+  <!-- Floating DM button (like their WhatsApp chat bubble idea) -->
+  <a class="float-dm" href="https://www.instagram.com/bouquets_and_baskets/" target="_blank" rel="noreferrer">
+    DM
+  </a>
 
   <footer class="footer">
     © <span id="year"></span> Bouquets & Baskets • All rights reserved
@@ -97,5 +206,5 @@
   <script src="script.js"></script>
 </body>
 
-</html>
+
 
