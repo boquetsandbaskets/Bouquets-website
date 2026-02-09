@@ -1,3 +1,8 @@
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 :root{
   --bg: #fff7fb;
   --panel: rgba(255,255,255,0.75);
@@ -19,7 +24,7 @@ body{
   background-image: url("images/logo.png");
   background-repeat:no-repeat;
   background-position: center 140px;
-  background-size: 520px;
+  background-size: 320px;
 }
 body::before{
   content:"";
@@ -274,6 +279,7 @@ body::before{
   .nav{display:none} /* keep simple for now */
   body{background-size: 360px;}
 }
+
 
 
 
