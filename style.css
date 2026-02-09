@@ -45,7 +45,11 @@ body::before{
   justify-content:space-between;
   gap:16px;
 }
-.logo{height:56px; width:auto; display:block}
+.logo {
+  height: 80px;        /* clean size */
+  max-width: 100%;
+  object-fit: contain;
+}
 .nav a{
   text-decoration:none;
   color:var(--text);
@@ -270,6 +274,7 @@ body::before{
   .nav{display:none} /* keep simple for now */
   body{background-size: 360px;}
 }
+
 
 
 
